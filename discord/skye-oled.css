@@ -1,0 +1,438 @@
+/**
+* @name SkyOLED
+* @author skyeforge
+* @description Simple amoled black
+* @authorId 205193926368428035
+* @version 0.1
+*/
+
+:root {
+  --dark-primary: #000000;
+  --dark-secondary: #0A0A0A;
+  --accent-color-primary: #1F1F1F;
+  --accent-color-secondary: #007B7B;
+}
+
+/*******************************************************************************
+     █████╗ ██████╗ ██████╗ 
+    ██╔══██╗██╔══██╗██╔══██╗
+    ███████║██████╔╝██████╔╝
+    ██╔══██║██╔═══╝ ██╔═══╝ 
+    ██║  ██║██║     ██║     
+    ╚═╝  ╚═╝╚═╝     ╚═╝     
+*******************************************************************************/
+
+/* Title Bar */
+.titleBar_a934d8 {
+  border-bottom: 1px solid var(--accent-color-primary);
+  background-color: var(--dark-primary);
+  margin-top: 0;
+  padding-top: 0.25rem;
+}
+
+div.wrapper_b75bb9,
+div.wrapper_cdfd51 {
+  background-color: transparent;
+}
+
+/* Message Context Menu */
+div.menu_d90b3d {
+  background-color: var(--dark-primary);
+  border: 2px solid var(--accent-color-primary);
+
+  & div.button_a24e84 {
+    margin: 0 2px;
+    background-color: transparent;
+    border: 1px solid var(--accent-color-primary);
+  }
+
+  & div.button_a24e84:hover {
+    & img.icon_a24e84 {
+      width: 22px;
+      height: 22px;
+
+      :hover {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+
+
+
+/*******************************************************************************
+     ██████╗ ██╗   ██╗██╗██╗     ██████╗ ███████╗
+    ██╔════╝ ██║   ██║██║██║     ██╔══██╗██╔════╝
+    ██║  ███╗██║   ██║██║██║     ██║  ██║███████╗
+    ██║   ██║██║   ██║██║██║     ██║  ██║╚════██║
+    ╚██████╔╝╚██████╔╝██║███████╗██████╔╝███████║
+     ╚═════╝  ╚═════╝ ╚═╝╚══════╝╚═════╝ ╚══════╝ 
+*******************************************************************************/
+
+/* Server bar */
+.guilds_a4d4d9 {
+  background-color: var(--dark-primary);
+  padding-top: 0.5rem;
+  border-right: 1px solid var(--accent-color-primary);
+}
+
+/* Gradient near discover button */
+.gradient_aa1bff {
+  display: none;
+}
+
+.footer_aa1bff {
+  background-color: var(--dark-primary);
+}
+
+/*******************************************************************************
+    ███████╗██╗██████╗ ███████╗██████╗  █████╗ ██████╗ 
+    ██╔════╝██║██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗
+    ███████╗██║██║  ██║█████╗  ██████╔╝███████║██████╔╝
+    ╚════██║██║██║  ██║██╔══╝  ██╔══██╗██╔══██║██╔══██╗
+    ███████║██║██████╔╝███████╗██████╔╝██║  ██║██║  ██║
+    ╚══════╝╚═╝╚═════╝ ╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝                                                
+*******************************************************************************/
+
+div.sidebar_a4d4d9 {
+  border-right: 1px solid var(--accent-color-primary);
+}
+
+div.sidebar_a4d4d9 > nav.container_ee69e0 {
+  background-color: var(--dark-primary);
+}
+
+div.container_fd6364::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--accent-color-primary);
+  z-index: 1;
+  pointer-events: none;
+}
+
+section.panels_a4d4d9::before {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--accent-color-primary);
+  z-index: 1;
+  pointer-events: none;
+}
+
+div.panel_bf1a22.activityPanel_a4d4d9 {
+  background-color: var(--dark-primary);
+}
+
+section.panels_a4d4d9 > div.container_b2ca13 {
+  background-color: var(--dark-primary);
+}
+
+div.container_adcaac {
+  background-color: var(--dark-primary);
+}
+
+div.actionButtons_adcaac button.button_adcaac{
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary);
+}
+
+/*******************************************************************************
+    ████████╗ ██████╗ ██████╗ ██████╗  █████╗ ██████╗ 
+    ╚══██╔══╝██╔═══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗
+       ██║   ██║   ██║██████╔╝██████╔╝███████║██████╔╝
+       ██║   ██║   ██║██╔═══╝ ██╔══██╗██╔══██║██╔══██╗
+       ██║   ╚██████╔╝██║     ██████╔╝██║  ██║██║  ██║
+       ╚═╝    ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ 
+*******************************************************************************/
+
+div.subtitleContainer_a7d72e {
+  border-radius: 0;
+}
+
+.subtitleContainer_a7d72e::after {
+  content: "";
+  display: block;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--accent-color-primary);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.title_a7d72e.container_fc4f04 {
+  background-color: var(--dark-primary);
+}
+
+.children_fc4f04::after {
+  width: 2px;
+  background-color: var(--accent-color-primary);
+}
+
+/* Search */
+div.searchBar_a46bef {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary);
+}
+
+/* Channels & roles */
+section.header_f1fd9c {
+  background-color: var(--dark-primary) !important;
+}
+
+/* Members */
+section.header_d20375 {
+  background-color: var(--dark-primary) !important;
+}
+
+/*******************************************************************************
+     ██████╗ ██████╗ ███╗   ██╗████████╗███████╗███╗   ██╗████████╗
+    ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔════╝████╗  ██║╚══██╔══╝
+    ██║     ██║   ██║██╔██╗ ██║   ██║   █████╗  ██╔██╗ ██║   ██║   
+    ██║     ██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██║╚██╗██║   ██║   
+    ╚██████╗╚██████╔╝██║ ╚████║   ██║   ███████╗██║ ╚████║   ██║   
+     ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═══╝   ╚═╝           
+*******************************************************************************/
+
+div.chat_a7d72e {
+  background-color: var(--dark-primary);
+  border-radius: 0;
+}
+
+main.chatContent_a7d72e {
+  border-right: 1px solid var(--accent-color-primary);
+  background-color: var(--dark-primary);
+}
+
+div.scroller_e2e187 {
+  margin-bottom: -10px;
+}
+
+div.scroller_e2e187::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+div.scroller_e2e187::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Channels & Roles */
+div.content_a7d72e  {
+  background-color: var(--dark-primary) !important;
+}
+
+div.content_a7d72e::before {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--accent-color-primary);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Options */
+div.optionButtonWrapper_bd5e1f {
+  background-color: var(--dark-primary) !important;
+}
+
+div.optionButtonWrapper_bd5e1f:hover {
+  background-color: var(--dark-secondary) !important;
+}
+
+div.pageBody_c2efea {
+  background-color: var(--dark-primary);
+}
+
+/* Channel rows */
+div.channelRow_f04d06 {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary);
+}
+
+/* Channel search box */
+div.search_c2efea {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary);
+}
+
+
+/* Members */
+div.scroller_d20375 {
+  background-color: var(--dark-primary);
+}
+
+/* Members table */
+div.mainTableContainer_e23072 {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary);
+}
+
+/* Members action button */
+div.button_a39fe9 {
+  background-color: transparent;
+}
+
+/* Prompts */
+div.prompt_c6b11b {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary) !important;
+}
+
+/* Profile card */
+div.profileCard_c6b11b {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary) !important;
+}
+
+div.role_c6b11b {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary);
+}
+
+/* Chat footer */
+form.form_a7d72e {
+  background-color: var(--dark-primary);
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+form.form_a7d72e::before {
+  content: "";
+  display: block;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--accent-color-primary);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Chat textarea */
+div.scrollableContainer_bdf0de  {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary);
+}
+
+/* Apps and command button */
+button.button_df39bd {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary);
+}
+
+/* Card embed */
+div.embedCard_df2817 {
+  border: 1px solid var(--accent-color-primary);
+  background-color: var(--dark-primary);
+}
+
+/* URL embed */
+article.embedWrapper_b558d0 {
+  background-color: var(--dark-primary);
+}
+
+/* URL embed content */
+div.gridContainer_b0068a {
+  border: 1px solid var(--accent-color-primary);
+  border-radius: 0 10px 10px 0;
+}
+
+div.resizeHandle_d1c246 {
+  /* background-color: var(--accent-color-primary); */
+  background: repeating-linear-gradient(
+    90deg,
+    var(--dark-primary),
+    var(--dark-primary) 1px,
+    var(--accent-color-primary),
+    var(--accent-color-primary) 2px
+  );
+}
+
+/* thread wrapper */
+div.container_d1c246 {
+  border-radius: 0;
+}
+
+/* thread area */
+section.container_fb4810,
+section.container_fb4810 > section.container_fc4f04 {
+  background-color: var(--dark-primary);
+}
+
+div.chat_fb4810::before {
+  content: "";
+  display: block;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--accent-color-primary);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* right bar wrapper */
+div.container_cbd271 {
+  background-color: transparent;
+}
+
+/* Member tray */
+div.members_cbd271 {
+  background-color: var(--dark-primary);
+}
+
+/* Activity card */
+div.container_c64476 {
+  background-color: transparent;
+}
+
+/* Member card */
+div.member_a31c43 {
+  background-color: transparent;
+}
+
+/* Date divider */
+span.content_c2654d {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--dark-primary);
+}
+
+/* Chat message hover */
+li.messageListItem_d5deea {
+  &:hover {
+    background-color: var(--dark-secondary);
+  }
+} 
+
+div.buttonsInner_d5deea {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--accent-color-primary);
+}
+
+/*******************************************************************************
+    ██╗   ██╗███████╗███╗   ██╗ ██████╗ ██████╗ ██████╗ ██████╗ 
+    ██║   ██║██╔════╝████╗  ██║██╔════╝██╔═══██╗██╔══██╗██╔══██╗
+    ██║   ██║█████╗  ██╔██╗ ██║██║     ██║   ██║██████╔╝██║  ██║
+    ╚██╗ ██╔╝██╔══╝  ██║╚██╗██║██║     ██║   ██║██╔══██╗██║  ██║
+     ╚████╔╝ ███████╗██║ ╚████║╚██████╗╚██████╔╝██║  ██║██████╔╝
+      ╚═══╝  ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝                                     
+*******************************************************************************/
+
+/* Spotify Control */
+section.panels_a4d4d9 > div#vc-spotify-player {
+  padding: 0.75rem;
+  background-color: var(--dark-primary);
+}
